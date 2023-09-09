@@ -1,7 +1,7 @@
 {
     "host": "localhost",
-    "user": "new_user",
-    "database": "items",
-    "password": "password",
+    "user": "root",
+    "database": "rwos",
+    "password": "admin",
     "port": 3306
 }

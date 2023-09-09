@@ -1,0 +1,19 @@
+config:
+  output:
+    - json
+  target: "http://localhost:5001"
+  phases:
+    - duration: 5
+      arrivalRate: 10
+      name: "first phase"
+    # - duration: 1
+      # arrivalRate: 15
+      # name: "second phase"
+    # - duration: 2
+      # arrivalRate: 20
+scenarios:
+  - flow:
+      - post:
+          url: "/items/itemdetail"
+          json:
+            name: "pan 20"

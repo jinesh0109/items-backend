@@ -4,12 +4,7 @@ const itemsController = require('../controllers/items');
 
 const router = express.Router();
 
-router.get('/', itemsController.getAllItems);
-
-router.post('/', itemsController.postItems);
-
-router.put('/', itemsController.putItems);
-
-router.delete('/:id', itemsController.deleteItems);
+router.post('/itemdetail',itemsController.getData);
+router.post('/updateitemcache',itemsController.getUpdatedItemCache);
 
 module.exports = router;
